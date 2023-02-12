@@ -25,7 +25,7 @@ app.get("/callback/I/want/title", (req, res) => {
     let responseHtml =
       "<html><head></head><body><h1>Following are the titles of given websites:</h1><ul>";
 
-    processAddresses(addressList, res, responseHtml);
+    callbackHandleAddresses(addressList, res, responseHtml);
   }
 });
 
